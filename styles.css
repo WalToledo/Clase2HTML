@@ -9,67 +9,97 @@ body {
     background-color: white;
 }
 
-#menu-servicios{
+#menu-servicios {
     list-style: none;
     text-align: center;
     padding: 10px 40px;
     border-bottom: 1px solid #eee;
 }
 
-
-#menu-servicios li{
+#menu-servicios li {
     display: inline-block;
     margin-left: 15px;
     font-family: Arial, sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     text-transform: uppercase;
-    color: #333;
-}
-#logo-principal{
-    font-size: 60px;
-    text-align: center;
 }
 
-.nav-principal{
-    background-color: #000a2d;
+#logo-principal {
+    font-size: 60px;
     text-align: center;
     padding: 10px 0;
 }
 
-.nav-principal li{
+.nav-principal {
+    background-color: #000a2d;
+    text-align: center;
+    padding: 12px 0;
+    list-style: none;
+}
+
+.nav-principal li {
     display: inline-block;
     margin: 0 15px;
 }
 
-.nav-principal li a{
+.nav-principal li a {
     color: white;
-    text-decoration: none;
     font-weight: bold;
     font-size: 15px;
 }
 
-main{
-    width: 90%;
-    margin: 30px auto;
-}
-
-article{
-    display: inline-block;
-    vertical-align: top;
-    width: 31%;
-    margin: 1%;
+main {
+    max-width: 1200px;
+    margin: 20px auto;
     text-align: left;
 }
 
-article img{
+#noticia-principal {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    padding-right: 30px;
+    border-right: 1px solid #ddd;
+}
+
+#noticia-principal img {
     width: 100%;
     height: auto;
+    margin-top: 15px;
+}
+
+#noticias-laterales {
+    display: inline-block;
+    vertical-align: top;
+    width: 35%; 
+    padding-left: 20px;
+}
+
+.tarjeta-noticia.secundaria {
+    display: block;  
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.tarjeta-noticia.secundaria img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; 
     margin: 10px 0;
 }
 
-article h2{
-    font-size: 20px;
+.tarjeta-noticia.secundaria h3 {
+    font-size: 18px;
     line-height: 1.2;
-    margin-bottom: 10px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
